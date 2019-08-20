@@ -1,0 +1,43 @@
+{
+    "name": "sakerrr/guzzle-logger",
+    "type": "library",
+    "description": "Guzzle logging middleware",
+    "keywords": ["guzzle", "logger", "middleware"],
+    "homepage": "https://github.com/sakerrr/guzzle-logger",
+    "license": "MIT",
+    "authors": [{
+        "name": "Jakub Bajnok",
+        "email": "jakub@bajnok.sk",
+        "homepage": "https://bajnok.sk",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/promises": "^1.3",
+        "guzzlehttp/psr7": "^1.6",
+        "monolog/monolog": "^1.24",
+        "psr/http-message": "^1.0",
+        "psr/log": "^1.1"
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "SaKer\\Guzzle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SaKer\\Guzzle\\Tests\\": "tests"
+        }
+    },
+    "suggest": {
+        "monolog/monolog": "Recommended PSR-3 logger"
+    },
+    "scripts": {
+        "test" : "composer phpunit",
+        "phpunit": "vendor/bin/phpunit --verbose"
+    }
+}

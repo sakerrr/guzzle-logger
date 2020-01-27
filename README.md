@@ -2,7 +2,7 @@
 <p>
 </p>
 
-This middleware will take care of logging all your request and responses.
+This middleware will take care of logging all your requests and responses.
 
 ## Install
 
